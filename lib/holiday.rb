@@ -63,6 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     values.each do |holiday, info|
       holiday1 = holiday.to_s
       holiday2 = holiday1.sub("_", " ")
+      holiday3 = holiday2.capitalize
       info = info.flatten.join(", ")
       puts "  #{holiday2}: #{info}"
     end
